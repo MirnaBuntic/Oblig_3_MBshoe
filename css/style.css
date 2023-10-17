@@ -15,6 +15,7 @@ header{
     font-size: 1.5rem;
     font-weight: 600;
     grid-area: header;
+    background-color: black;
 }
 
 header nav{
@@ -30,17 +31,20 @@ header nav div{
 
 #logo{
     text-decoration: none;
+    color: white;
 }
 
 .navbar{
     display:none;
+    color: white;
+    z-index: 1;
 }
 
-.responsive{
+.responsive {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: rgb(40, 39, 39);
+    background-color: #242424;
     margin: 0;
     padding: 0;
     top: 40px;
@@ -48,22 +52,13 @@ header nav div{
     list-style: none;
 }
 
-.responsive a{
-    color: white;
+.responsive a {
+    color: #fff;
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
 }
 
-.black-btn{
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    font-weight: 400;
-}
 
 main{
     grid-area: main;
@@ -74,30 +69,73 @@ main section img{
     width: 100%;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 8px; 
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#shoppa-nu{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#bestseller{
+    font-size: large;
+    color: black;
+}
+
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+}
+
+.prev {
+    left: 0;
+}
+
+.slider-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slider-images {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+
+.slider-image {
+    flex: 0 50% 50%;
+}
+
+
+.next {
+    right: 0;
+}
+
 footer{
     grid-area: footer;
 }
 
-#services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: gray;
-    padding: 1rem;
-    justify-content: space-around;
-}
 
-#services h2{
-    width: 100%;
-    text-align: center;
-}
-
-#services article{
-    max-width: 300px;
-    width: 100%;
-    min-width: 200px;
-
-}
 
 @media only screen and (min-width:600px){
 
@@ -115,24 +153,29 @@ footer{
     #ham, .fa-magnifying-glass{
         display: none;
     }
-
-    .flex-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    
+    main{
+        grid-area: main;
+        padding: 0;
     }
-
-    .flex-section img{
-        width: 50%
+    
+    main section img{
+        width: 100%;
     }
-
-    .flex-section section{
-        padding: 1rem;
-        width: 40%;
-        align-self: center;
+    
+    .container {
+        position: relative;
+        width: 100%;
     }
-
-    .right img{
-        order: 1;
+    
+    .text-overlay {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px; 
+        text-align: center; 
     }
+    
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +8,68 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Bolleoppskrifter</title>
+    <title>MBshoe</title>
  </head>
  <body>
     <div id="grid-container">
     <header>
         <nav>
-            <a href="#" id="logo">Logo</a>
             <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i id="ham" class="fa-solid fa-bars"></i>
+                <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
+            </div>
+
+            <span><a href="index.html" id="logo">MBshoe</a></span>
+
+            <div>
+                <i class="fa-solid fa-heart" style="color: #ffffff;">
+                <i class="fa-solid fa-user" style="color: #ffffff;">
+                <i class="fa-solid fa-bag-shopping" style="color: #ffffff;">
             </div>
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">REA</a></li>
+                <li><a href="#">Damskor</a></li>
+                <li><a href="#">Herrskor</a></li>
+                <li><a href="#">Barnkor</a></li>
+                <li><a href="#">Skotillbehör</a></li>
             </ul>
         </nav>
-        <section>
-            <h1>Bolleoppskrifter</h1>
-            <a href="#" class="black-btn">Read more</a>
-        </section>
+  
     </header>
     <main>
-        <section class="flex-section">
-            <img src="https://placehold.co/600x400" alt="grå placeholder bilde">
-            <section>
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt aliquet molestie. Quisque non vehicula nulla, id venenatis nunc.</p>
-            </section>
+        <section>
+            <div class="container">
+                <img src="img/nike-5126389_640.jpg" alt="Vita Nikeskor med svarta detaljer">
+                <div class="text-overlay">
+                    <h2>ÅRETS HÖSTREA ÄR IGÅNG</h2>
+                    <h3> upp till 50%</h3>
+                    <a id="shoppa-nu" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
         </section>
-        <section class="flex-section right">
-            <img src="https://placehold.co/600x400" alt="grå placeholder bilde">
-            <section>
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt aliquet molestie. Quisque non vehicula nulla, id venenatis nunc.</p>
-            </section>
-        </section>
-        <section id="services">
-            <h2>Services</h2>
-            <article>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt aliquet molestie. Quisque non vehicula nulla, id venenatis nunc.</p>
-            </article>
-            <article>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt aliquet molestie. Quisque non vehicula nulla, id venenatis nunc.</p>
-            </article>
-            <article>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt aliquet molestie. Quisque non vehicula nulla, id venenatis nunc.</p>
-            </article>
+        <section>  
+            <a id="bestseller" href="#">Bästsäljare</a>
+            <span class="prev" onclick="prevImage()">&#9665;</span>
+            <span class="next" onclick="nextImage()">&#9655;</span>
+            <div class="slider-container">
+                <ul class="slider-images">
+                    <li class="slider-image">
+                        <img src="img/footwear-1837170_640.jpg" alt="Image 1"><a href="#">New Balance</a><p>Sneakers Dam-ljusblå</p><p>649kr</p>
+                    </li>
+                    <li class="slider-image">
+                        <img src="img/kicks-2213619_640.jpg" alt="Image 2"><a href="#">Nike</a><p>Sneakers Herr- vit/röd</p><p>3499kr</p>
+                    </li>
+                    <li class="slider-image">
+                        <img src="img/feet-1842328_640.jpg" alt="Image 3"><a href="#">Converse</a><p>Sneakers Dam- svart</p><p>899kr</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
-    </div>
     <script>
 
         let x = document.querySelector(".navbar")
@@ -76,6 +81,57 @@
                 x.className = "navbar"
             }
         })
+    </script>
+    <script>
+        let currentImage = 0;
+        const images = document.querySelectorAll('.slider-image');
+
+        function showImage(index) {
+            images.forEach(image => image.style.display = 'none');
+            images[index].style.display = 'block';
+        }
+
+        function prevImage() {
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            showImage(currentImage);
+        }
+
+        function nextImage() {
+            currentImage = (currentImage + 1) % images.length;
+            showImage(currentImage);
+        }
+
+        showImage(currentImage);
+    </script>
+    <script>
+        let currentImage = 0;
+        const images = document.querySelectorAll('.slider-image');
+        const sliderImages = document.querySelector('.slider-images');
+
+        function showImage(index) {
+            images.forEach(image => image.style.display = 'none');
+            images[index].style.display = 'block';
+        }
+
+        function prevImage() {
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            showImage(currentImage);
+            updateSliderPosition();
+        }
+
+        function nextImage() {
+            currentImage = (currentImage + 1) % images.length;
+            showImage(currentImage);
+            updateSliderPosition();
+        }
+
+        function updateSliderPosition() {
+            const imageWidth = images[currentImage].clientWidth;
+            sliderImages.style.transform = `translateX(-${currentImage * imageWidth}px)`;
+        }
+
+        window.addEventListener('resize', updateSliderPosition);
+        showImage(currentImage);
     </script>
  </body>
 </html>
