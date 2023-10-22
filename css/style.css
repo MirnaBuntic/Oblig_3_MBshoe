@@ -18,47 +18,62 @@ header{
     background-color: black;
 }
 
+#logo{
+    text-decoration:none;
+    color: white;
+    display:inline;
+    text-align: center;
+    margin-left: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#search{
+    display: none;
+}
+
 header nav{
-    display:flex;
+    display: inline;
     justify-content: space-between;
     position: relative;
 }
 
 header nav div{
-    display: flex;
+    display: inline;
     gap: 1rem;
 }
 
-#logo{
-    text-decoration: none;
-    color: white;
+#left-nav{
+    display: inline;
+    float: left;
+}
+
+#right-nav{
+    display: inline;
+    float: right;
 }
 
 .navbar{
     display:none;
-    color: white;
-    z-index: 1;
 }
 
 .responsive {
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: #242424;
     margin: 0;
     padding: 0;
     top: 40px;
-    width: 100%;
     list-style: none;
+    background-color: #242424;
+    z-index: 1;
 }
 
 .responsive a {
-    color: #fff;
+    color: white;
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
 }
-
 
 main{
     grid-area: main;
@@ -69,6 +84,7 @@ main section img{
     width: 100%;
 }
 
+/*class="container" och "text-overlay" hämtad från chatgpt*/
 .container {
     position: relative;
     width: 100%;
@@ -80,61 +96,183 @@ main section img{
     left: 50%; 
     transform: translate(-50%, -50%); 
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 8px; 
-    text-align: center;
+    padding: .5rem; 
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #shoppa-nu{
     background-color: black;
     text-decoration: none;
     color: white;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    border-radius: 2px;
 }
 
-#bestseller{
-    font-size: large;
+main section article{
+    margin-top: 1rem;
+}
+
+#bestseller, #nyheter{
+    font-size: larger;
     color: black;
 }
 
-.prev, .next {
-    cursor: pointer;
-    top: 50%;
+.prev, .next{
+    float: right;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 4px;
 }
 
-.prev {
-    left: 0;
-}
-
-.slider-container {
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.slider-images {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.slider-images{
     display: flex;
-    transition: transform 0.3s ease;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 2rem;
 }
 
-
-.slider-image {
-    flex: 0 50% 50%;
+.slider-image{
+    margin-right: 10px;
 }
 
+.slider-image h4, p{
+    color: black;
+} 
 
-.next {
-    right: 0;
+.slider-image a{
+    text-decoration: none;
+}
+
+article p i{
+    display: inline;
+    float: right;
+    font-size: x-large;
+}
+
+#converse1, #converse2{
+    display: none;
+}
+
+section form{
+    background-color: rgba(24, 121, 166, 0.532);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+
+form input[type=submit]{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1;
+}
+
+.flex-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stor-bild{
+    margin-top: 0.5rem;
+}
+
+.shoppa-nu-btn{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 2px;
+}
+
+/*produktsida*/
+
+nav #hans-greta{
+    list-style: none;
+    float: left;
+}
+
+.hans-greta li a{
+    color: black;
+}
+
+main nav li{
+    display: inline;
+    margin: auto;
+}
+
+#this-page{
+    color: rgb(75, 73, 73);
+}
+
+.product img{
+    width: 100%;
+}
+
+/*select är hämtad från chatgpt*/
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#add-to-cart{
+    background-color: #000;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    display: inline;
+    float: center;
+    margin: 1rem;
+}
+
+.details li{
+    list-style: none;
+    
 }
 
 footer{
     grid-area: footer;
+    background-color: rgb(159, 156, 156);
+    margin-top: 2rem;
 }
 
+#logo-footer{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.footer-ul li{
+   display: none;
+}
+
+footer ul a{
+    color: black;
+}
+
+#footer-icons{
+    font-size: xx-large;
+    padding: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#footer-icons li{
+    display: inline-block;
+}
+
+footer h3{
+    text-align: center;
+}
 
 
 @media only screen and (min-width:600px){
@@ -147,10 +285,15 @@ footer{
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        list-style: none;
+        justify-content: center;
     }
 
-    #ham, .fa-magnifying-glass{
+    .navbar a{
+        list-style: none;
+        color: #fff;
+    }
+
+    #ham, #ma-glass{
         display: none;
     }
     
@@ -158,15 +301,7 @@ footer{
         grid-area: main;
         padding: 0;
     }
-    
-    main section img{
-        width: 100%;
-    }
-    
-    .container {
-        position: relative;
-        width: 100%;
-    }
+
     
     .text-overlay {
         position: absolute;
@@ -174,8 +309,57 @@ footer{
         left: 50%; 
         transform: translate(-50%, -50%); 
         background-color: rgba(255, 255, 255, 0.7);
-        padding: 10px; 
+        padding: 40px; 
         text-align: center; 
     }
+
+    #shoppa-nu{
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 2px;
+    }
+
+    #converse1, #converse2{
+        display: inline;
+    }
     
+    #search{
+        display: inline-flex;
+    }
+    
+    #logo{
+        text-decoration:none;
+        color: white;
+        display:inline;
+        float: right
+    }
+
+    .flex-section{
+        flex-direction: row;
+        text-align: center;
+        margin: 1rem auto; 
+        justify-content: center;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+
+    .product img{
+        width: auto;
+        margin-right: 10px;
+        float: left;
+    }
+
+    .footer-ul li{
+        display: list-item;
+        list-style: none;
+     }
+
+
 }

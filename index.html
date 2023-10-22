@@ -8,130 +8,179 @@
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>MBshoe</title>
+    <title>MBshoe-startsida</title>
  </head>
- <body>
-    <div id="grid-container">
-    <header>
-        <nav>
-            <div>
-                <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                <i class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
-            </div>
+    <body>
+        <div id="grid-container">
+            <header>
+                 <span><a href="index.html" id="logo">MBshoe</a></span>
+                 <nav>
+                     <section id="left-nav">
+                            <div>
+                                <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                                <i id="ma-glass" class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
+                            </div>
+                     </section>
 
-            <span><a href="index.html" id="logo">MBshoe</a></span>
+                     <section id="right-nav">
+                            <div>
+                                <a href="#"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
+                                <a href="mina-sidor.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                                <a href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+                            </div>
+                     </section>
+            
+                     <form method="post" action="#">
+                            <label for="search"></label>
+                            <input type="text" id="search" name="search" placeholder="Sök...">
+                     </form>
 
-            <div>
-                <i class="fa-solid fa-heart" style="color: #ffffff;">
-                <i class="fa-solid fa-user" style="color: #ffffff;">
-                <i class="fa-solid fa-bag-shopping" style="color: #ffffff;">
-            </div>
-            <ul class="navbar">
-                <li><a href="#">Nyheter</a></li>
-                <li><a href="#">REA</a></li>
-                <li><a href="#">Damskor</a></li>
-                <li><a href="#">Herrskor</a></li>
-                <li><a href="#">Barnkor</a></li>
-                <li><a href="#">Skotillbehör</a></li>
-            </ul>
-        </nav>
-  
-    </header>
-    <main>
-        <section>
-            <div class="container">
-                <img src="img/nike-5126389_640.jpg" alt="Vita Nikeskor med svarta detaljer">
-                <div class="text-overlay">
-                    <h2>ÅRETS HÖSTREA ÄR IGÅNG</h2>
-                    <h3> upp till 50%</h3>
-                    <a id="shoppa-nu" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
-                </div>
-            </div>
-        </section>
-        <section>  
-            <a id="bestseller" href="#">Bästsäljare</a>
-            <span class="prev" onclick="prevImage()">&#9665;</span>
-            <span class="next" onclick="nextImage()">&#9655;</span>
-            <div class="slider-container">
-                <ul class="slider-images">
-                    <li class="slider-image">
-                        <img src="img/footwear-1837170_640.jpg" alt="Image 1"><a href="#">New Balance</a><p>Sneakers Dam-ljusblå</p><p>649kr</p>
-                    </li>
-                    <li class="slider-image">
-                        <img src="img/kicks-2213619_640.jpg" alt="Image 2"><a href="#">Nike</a><p>Sneakers Herr- vit/röd</p><p>3499kr</p>
-                    </li>
-                    <li class="slider-image">
-                        <img src="img/feet-1842328_640.jpg" alt="Image 3"><a href="#">Converse</a><p>Sneakers Dam- svart</p><p>899kr</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
+                     <ul class="navbar">
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">REA</a></li>
+                        <li><a href="#">Damskor</a></li>
+                        <li><a href="#">Herrskor</a></li>
+                        <li><a href="#">Barnskor</a></li>
+                        <li><a href="#">Skotillbehör</a></li>
+                     </ul>
+                    </nav>
+                </header>
+             <main>
+                 <section>
+                    <!--div class="container" hämtad från chatgpt-->
+                     <div class="container">
+                         <img src="img/nike-5126389_640.jpg" alt="Vita Nikeskor med svarta detaljer">
+                         <div class="text-overlay">
+                             <h2>ÅRETS HÖSTREA ÄR IGÅNG</h2>
+                             <h3 id="rea"> upp till 50%</h3>
+                             <a id="shoppa-nu" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                         </div>
+                     </div> 
+                 </section>
+                 <section> 
+                     <article> 
+                        <a id="bestseller" href="#">Bästsäljare</a>
+                        <button class="next"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                        <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
+                        <ul class="slider-images">
+                            <li class="slider-image">
+                                <a href="produkt.html">
+                                 <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer">
+                                 <h4>New Balance</h4><p>Sneakers Dam- ljusblå</p></a>
+                                 <p><b>649kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                             </li>
+                            <li class="slider-image">
+                                <a href="#">
+                                 <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer">
+                                 <h4>Nike</h4><p>Sneakers Herr- vit/röd</p></a>
+                                 <p><b>3499kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                            </li>
+                            <li id="converse1" class="slider-image">
+                                <a href="produkt.html">
+                                 <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse">
+                                 <h4>Converse</h4><p>Sneakers Dam- svart</p> </a>
+                                 <p><b>899kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                            </li>
+                        </ul>
+                    </article>
+                 </section>
+                 <section>
+                     <article> 
+                         <a id="nyheter" href="#">Nyheter</a>
+                         <button class="next"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                         <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
+                         <ul class="slider-images">
+                             <li class="slider-image">
+                                <a href="#">
+                                 <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer">
+                                 <h4>New Balance</h4><p>Sneakers Dam- ljusblå</p></a>
+                                 <p><b>649kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                             </li>
+                             <li class="slider-image">
+                                <a href="#">
+                                 <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer">
+                                 <h4>Nike</h4><p>Sneakers Herr- vit/röd</p></a>
+                                 <p><b>3499kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                             </li>
+                             <li id="converse2" class="slider-image">
+                                <a href="produkt.html">
+                                 <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse">
+                                 <h4>Converse</h4><p>Sneakers Dam- svart</p></a>
+                                 <p><b>899kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                             </li>
+                         </ul>
+                     </article>
+                 </section>
+                 <section id="user-registration">
+                    <form id="user-reg" method="post" action="#" autocomplete="on">
+                        <h3>Bli medlem och få 15% rabatt på ditt första köp!</h3>
+                        <label for="user-reg-email">e-postadresse:</label>
+                        <input type="email" name="user-reg-email" id="user-reg-email" placeholder="epost@exempel.com...">
+                        <p>Läs mer om <a href="#">medlemsvilkår här.</a></p>
+                        <input type="submit" value="Registrer">
+                    </form>
+                 </section>  
+                 <section class="flex-section">
+                     <article>
+                         <img class="stor-bild" src="img/childrens-shoes-3035034_640.jpg" alt="Grå barnskor med vita stjärnor">
+                         <h3>3 för 2 på alla barnskor</h3>
+                         <a class="shoppa-nu-btn" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                     </article>
+                     <article>
+                         <img class="stor-bild" src="img/shoeshine-72477_640.jpg" alt="Olika typer skorengöring och borstar">
+                         <h3>20% på all skorengöring</h3>
+                         <a class="shoppa-nu-btn" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                     </article>
+                 </section>
+             </main>
+             <footer>
+                 <nav>
+                     <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
+                     <h4>Om oss</h4>
+                     <ul class="footer-ul">
+                        <li><a href="#">Hitta närmsta butik</a></li>
+                        <li><a href="#">Intigritetspolicy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Jobba hos oss</a></li>
+                     </ul>
+                     <h4>Kundservice</h4>
+                     <ul class="footer-ul">
+                        <li><a href="#">Kontakta oss</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Leverans & frakt</a></li>
+                     </ul>
+                     <h4>Bli medlem</h4>
+                     <ul class="footer-ul">
+                        <li><a href="#">Bli medlem</a></li>
+                        <li><a href="#">Medlemsvillkår</a></li>
+                        <li><a href="#">Medlemsförmåner</a></li>
+                     </ul>
+                 </nav>
 
-    </footer>
-    <script>
+                 <h3>Följ oss</h3>
+                 <ul id="footer-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+                 </ul>
+             </footer>
+        </div>
 
-        let x = document.querySelector(".navbar")
-
-        document.getElementById("ham").addEventListener("click", (e) =>{
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else{
-                x.className = "navbar"
-            }
-        })
-    </script>
-    <script>
-        let currentImage = 0;
-        const images = document.querySelectorAll('.slider-image');
-
-        function showImage(index) {
-            images.forEach(image => image.style.display = 'none');
-            images[index].style.display = 'block';
-        }
-
-        function prevImage() {
-            currentImage = (currentImage - 1 + images.length) % images.length;
-            showImage(currentImage);
-        }
-
-        function nextImage() {
-            currentImage = (currentImage + 1) % images.length;
-            showImage(currentImage);
-        }
-
-        showImage(currentImage);
-    </script>
-    <script>
-        let currentImage = 0;
-        const images = document.querySelectorAll('.slider-image');
-        const sliderImages = document.querySelector('.slider-images');
-
-        function showImage(index) {
-            images.forEach(image => image.style.display = 'none');
-            images[index].style.display = 'block';
-        }
-
-        function prevImage() {
-            currentImage = (currentImage - 1 + images.length) % images.length;
-            showImage(currentImage);
-            updateSliderPosition();
-        }
-
-        function nextImage() {
-            currentImage = (currentImage + 1) % images.length;
-            showImage(currentImage);
-            updateSliderPosition();
-        }
-
-        function updateSliderPosition() {
-            const imageWidth = images[currentImage].clientWidth;
-            sliderImages.style.transform = `translateX(-${currentImage * imageWidth}px)`;
-        }
-
-        window.addEventListener('resize', updateSliderPosition);
-        showImage(currentImage);
-    </script>
- </body>
+        <script>
+            // Finn navigasjonsmenyen
+            let x = document.querySelector(".navbar")
+            // Legg til en hendelseslytter for klikk på menyikonet (ham)
+            document.getElementById("ham").addEventListener("click", (e) => {
+                // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+                if (x.className === "navbar") {
+                    // Hvis ikke, legg til klassen for responsiv meny
+                    x.className += " responsive";
+                } else {
+                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                    x.className = "navbar"
+                }
+            })
+        </script>
+    
+    </body>
 </html>
