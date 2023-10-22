@@ -46,22 +46,21 @@
                 </nav>
             </header>
             <main>
-                <section>
-                    <nav>
-                        <ul id="hans-greta">
-                            <li><a href="index.html">Hem></a></li>
-                            <li><a href="#">Damskor></a></li>
-                            <li><a href="#">Sneakers></a></li>
-                            <li id="this-page">Converse</li>
-                        </ul>
-                    </nav>
-                </section>
+                <nav>
+                    <ul id="hans-greta">
+                        <li><a href="index.html">Hem></a></li>
+                        <li><a href="#">Damskor></a></li>
+                        <li><a href="#">Sneakers></a></li>
+                        <li class="this-page">Converse</li>
+                    </ul>
+                </nav>
                 <section class="flex-section-p">
                     <article>
                         <!--div class tagen från chatgpt-->
                         <div class="product">
                             <img src="img/feet-1842328_640.jpg" alt="Svarta converse med vit logga">
                             <div class="product-info">
+                                <i id="heart" class="fa-regular fa-heart" style="color: #000000;"></i>
                                 <h2>Converse</h2>
                                 <p><b>899kr</b></p>
                                 <label for="color">Vald färg:</label>
@@ -86,20 +85,11 @@
                         </div>
                     </article>
                 </section>
-                <section>
-                    <article>
-                        <ul class="details">
-                            <li>Specifikationer & detaljer +</li>
-                            <li>Hitta i butik +</li>
-                            <li>Recensioner +</li>
-                        </ul>
-                    </article>
-                </section>
-                <section>
-                    <article>
+                <section id="slider-prod">
+                    <article> 
+                        <p id="more"><b>Du kanske också gillar</b></p>
                         <button class="next"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
                         <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
-                        <h4>Du kanske också gillar</h4>
                         <ul class="slider-images">
                             <li class="slider-image">
                                <a href="#">
@@ -124,35 +114,36 @@
                 </section>
             </main>
             <footer>
-                <nav>
-                    <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
-                    <h4>Om oss</h4>
-                        <ul class="footer-ul">
-                           <li><a href="#">Hitta närmsta butik</a></li>
-                           <li><a href="#">Intigritetspolicy</a></li>
-                           <li><a href="#">Cookies</a></li>
-                           <li><a href="#">Jobba hos oss</a></li>
-                       </ul>
-                    <h4>Kundservice</h4>
-                       <ul class="footer-ul">
-                           <li><a href="#">Kontakta oss</a></li>
-                           <li><a href="#">Retur</a></li>
-                           <li><a href="#">Leverans & frakt</a></li>
-                       </ul>
-                    <h4>Bli medlem</h4>
-                       <ul class="footer-ul">
-                           <li><a href="#">Bli medlem</a></li>
-                           <li><a href="#">Medlemsvillkår</a></li>
-                           <li><a href="#">Medlemsförmåner</a></li>
-                       </ul>
+                <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
+                <nav id="footer-row">
+                    <ul class="footer-ul">
+                        <li><h4>Om oss</h4></li>
+                        <li><a href="#">Hitta närmsta butik</a></li>
+                        <li><a href="#">Intigritetspolicy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Jobba hos oss</a></li>
+                    </ul>
+                    <ul class="footer-ul">
+                        <li><h4>Kundservice</h4></li>
+                        <li><a href="#">Kontakta oss</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Leverans & frakt</a></li>
+                    </ul>
+                    <ul class="footer-ul">
+                        <li><h4>Bli medlem</h4></li>
+                        <li><a href="#">Bli medlem</a></li>
+                        <li><a href="#">Medlemsvillkår</a></li>
+                        <li><a href="#">Medlemsförmåner</a></li>
+                    </ul>
                 </nav>
-             
-                <h3>Följ oss</h3>
+                <nav>
+                   <h3>Följ oss</h3>
                    <ul id="footer-icons">
-                       <a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
-                       <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-                       <a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+                       <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                       <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                       <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
                    </ul>
+                </nav>   
             </footer>
        </div>        
     </body>
