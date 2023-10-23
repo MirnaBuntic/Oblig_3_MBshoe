@@ -13,8 +13,9 @@
     <body>
        <div id="grid-container">
             <header>
-                <span><a href="index.html" id="logo">MBshoe</a></span>
                 <nav>
+                    <span><a href="index.html" id="logo">MBshoe</a></span>
+
                     <section id="left-nav">
                         <div>
                             <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
@@ -145,6 +146,21 @@
                    </ul>
                 </nav>   
             </footer>
-       </div>        
+       </div> 
+       <script>
+             // Finn navigasjonsmenyen
+             let x = document.querySelector(".navbar")
+             // Legg til en hendelseslytter for klikk på menyikonet (ham)
+             document.getElementById("ham").addEventListener("click", (e) => {
+                 // Sjekk om navigasjonsmenyen allerede har klassen "responsive"
+                if (x.className === "navbar") {
+                     // Hvis ikke, legg til klassen for responsiv meny
+                     x.className += " responsive";
+                } else {
+                    // Hvis den allerede har klassen, fjern den for å gjøre menyen skjult
+                     x.className = "navbar"
+                }
+            })
+        </script>
     </body>
 </html>                
