@@ -18,6 +18,13 @@ header{
     background-color: black;
 }
 
+/* Bild-källlhänvisning */
+.bildtext{
+    color: gray;
+    opacity: 0.5;
+    font-size: 5px;
+}
+
 #logo{
     text-decoration:none;
     color: white;
@@ -255,8 +262,13 @@ select {
 
 /*Mina sidor*/
 
+#rubrik-ms{
+    margin-left: 1rem;
+}
+
 .list-container{
     display: flex;
+    justify-content: center;
 }
 
 .list-container ul{
@@ -337,7 +349,7 @@ footer h3{
 }
 
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width:800px){
 
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer";
