@@ -11,6 +11,8 @@ header, main, footer{
     padding: 1rem;
 }
 
+/*Css för header*/
+
 header{
     font-size: 1.5rem;
     font-weight: 600;
@@ -18,7 +20,7 @@ header{
     background-color: black;
 }
 
-/* Bild-källlhänvisning */
+/* Bild-källhänvisning */
 .bildtext{
     color: gray;
     opacity: 0.5;
@@ -81,6 +83,8 @@ header nav div{
     padding: 1rem;
     text-decoration: none;
 }
+
+/*CSS för main*/
 
 main{
     grid-area: main;
@@ -180,7 +184,7 @@ form input[type=submit]{
     color: black;
     font-weight: 600;
     font-size: 16px;
-    border: 1;
+    border: 0;
 }
 
 .flex-section{
@@ -201,7 +205,7 @@ form input[type=submit]{
     border-radius: 2px;
 }
 
-/*produktsida*/
+/*Extra CSS för produktsidan*/
 
 #hans-greta{
     list-style: none;
@@ -230,7 +234,7 @@ main nav li{
     width: 100%;
 }
 
-/*select är hämtad från chatgpt*/
+/*select och add-to-cart är hämtad från chatgpt*/
 select {
     padding: 10px;
     border: 1px solid #ccc;
@@ -244,7 +248,6 @@ select {
     color: white;
     padding: 1rem 3rem 1rem 3rem;
     display: inline;
-    float: center;
     margin: 1rem;
     margin-top: 2rem;
 }
@@ -260,7 +263,7 @@ select {
     padding: 1rem;
 }
 
-/*Mina sidor*/
+/*Extra CSS för mina sidor*/
 
 #rubrik-ms{
     margin-left: 1rem;
@@ -301,6 +304,8 @@ select {
 #extra{
     display: none;
 }
+
+/*CSS för footer*/
 
 footer{
     grid-area: footer;
@@ -349,11 +354,16 @@ footer h3{
 }
 
 
+/*CSS för desktop*/
+
+
 @media only screen and (min-width:800px){
 
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer";
     }
+
+    /*css nav*/
 
     .navbar{
         display: flex;
@@ -370,6 +380,19 @@ footer h3{
     #ham, #ma-glass{
         display: none;
     }
+
+    #search{
+        display: inline-flex;
+    }
+    
+    #logo{
+        text-decoration:none;
+        color: white;
+        display:inline;
+        float: right
+    }
+
+    /*css main*/
     
     main{
         grid-area: main;
@@ -405,17 +428,6 @@ footer h3{
         display: inline;
     }
     
-    #search{
-        display: inline-flex;
-    }
-    
-    #logo{
-        text-decoration:none;
-        color: white;
-        display:inline;
-        float: right
-    }
-
     .flex-section{
         flex-direction: row;
         text-align: center;
@@ -427,6 +439,8 @@ footer h3{
         display: flex;
         justify-content: center;
     }
+
+    /*css produktsida*/
 
     .product {
         display: flex;
@@ -442,6 +456,8 @@ footer h3{
         float: left;
     }
 
+    /*css mina-sidor*/
+
     #extra{
         display: list-item;
         margin-left: 8rem;
@@ -449,6 +465,12 @@ footer h3{
         padding: 0 8rem;
         text-align: center;
     }
+
+    #mina-best{
+        color: #a0a0a0;
+    }
+
+    /*css footer*/
 
     #footer-row li a{
         display: list-item;
