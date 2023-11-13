@@ -3,48 +3,66 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mirna Buntic">
+    <meta name="description" content="Detta är Mbshoes startsida där du shoppa från ett stort utval av sneakers i både damskor, herrskor och barnskor.">
+    <meta name="keywords" content="Sneakers, Damskor, Herrskor, Startsida, Shoppa">
+    <!--Metadata för Facebook och Instagram-->
+    <meta property="og:title" content="MBshoe">
+    <meta property="og:description" content="Detta är Mbshoes startsida där du shoppa från ett stort utval av sneakers i både damskor, herrskor och barnskor.">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:url" content="https://itstud.hiof.no/~mirnacb/index.html">
+    <meta property="og:type" content="website">
+    <!--Slut-->
+    <!--Metadata för Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MBshoe">
+    <meta name="twitter:description" content="Detta är Mbshoes startsida där du shoppa från ett stort utval av sneakers i både damskor, herrskor och barnskor.">
+    <meta name="twitter:image" content="http://example.com/image.jpg">
+    <meta name="twitter:url" content="https://itstud.hiof.no/~mirnacb/index.html">
+    <!--Slut-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>MBshoe-startsida</title>
+    <title>MBshoe: En startsida som gör dig redo att shoppa bland nya sneakers vad gäller både damskor, herrskor och barnskor.</title>
  </head>
     <body>
         <div id="grid-container">
             <header>
                  <nav>
-                    <span><a href="index.html" id="logo">MBshoe</a></span>
+                     <span><a href="index.html" id="logo">MBshoe</a></span>
 
                      <section id="left-nav">
                             <div>
-                                <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                                <i id="ma-glass" class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
+                                <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;" role="img" aria-haspopup="true" aria-expanded="false" aria-label="Tryck för att få upp meny."></i>
+                                <i id="ma-glass" class="fa-solid fa-magnifying-glass" style="color:#ffffff;" aria-label="Tryck för att kunna söka på hemsidan."></i>
                             </div>
                      </section>
 
                      <section id="right-nav">
                             <div>
-                                <a href="#"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
-                                <a href="mina-sidor.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
-                                <a href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+                                <a href="#" aria-label="Länk till en sida där du har alla dina gillade produkter." ><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
+                                <a href="mina-sidor.html" aria-label="Länk till mina-sidor."><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                                <a href="#" aria-label="Länk till kundvagnen och ut-checkning."><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
                             </div>
                      </section>
             
-                     <form method="post" action="#">
-                            <label for="search"></label>
+                     <form method="get" action="/search" aria-haspopup="true">
+                            <label for="search" aria-label="Tryck för att kunna söka på sidan." ></label>
                             <input type="text" id="search" name="search" placeholder="Sök...">
                      </form>
 
                      <ul class="navbar">
-                        <li><a href="#">Nyheter</a></li>
-                        <li><a href="#">REA</a></li>
-                        <li><a href="#">Damskor</a></li>
-                        <li><a href="#">Herrskor</a></li>
-                        <li><a href="#">Barnskor</a></li>
-                        <li><a href="#">Skotillbehör</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida med skonyheter.">Nyheter</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida med alla rea-artiklar." >REA</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida för damskor.">Damskor</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida för herrskor." >Herrskor</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida för barnskor." >Barnskor</a></li>
+                        <li><a href="#" aria-label="Länk till MBshoes sida med alla skotillbehör.">Skotillbehör</a></li>
+                        <li><a href="analys.html" aria-label="Länk till MBshoes analyssida.">Analys</a></li>
                      </ul>
-                    </nav>
+                 </nav>
                 </header>
              <main>
                  <section>
@@ -54,75 +72,81 @@
                             <!--"https://pixabay.com/sv/photos/nike-flygvapen-manilla-5126389/"-->
                                 <p class="bildtext">Bild av Justcreativestock, Pixabay</p>
                          <div class="text-overlay">
-                             <h2>ÅRETS HÖSTREA ÄR IGÅNG</h2>
-                             <h3 id="rea"> upp till 50%</h3>
-                             <a id="shoppa-nu" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                             <h1>ÅRETS HÖSTREA ÄR IGÅNG</h1>
+                             <h2 id="rea"> upp till 50%</h2>
+                             <a id="shoppa-nu" href="#" aria-label="Länk till sida med produkter på rea.">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
                          </div>
                      </div> 
                  </section>
                  <!--inspiration hämtad från chatgpt (class="slider")-->
                  <section class="slider"> 
                     <article> 
-                        <a id="bestseller" href="#">Bästsäljare</a>
-                        <button class="next"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
-                        <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
+                        <a id="bestseller" href="#" aria-label="Länk till sida med flera bästsäljande produkter.">Bästsäljare</a>
+                        <button class="next" aria-label="Pil för att se fler produkter till höger."><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                        <button class="prev" aria-label="Pil för att se fler produkter till vänster."><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
                         <ul class="slider-images">
                             <li class="slider-image">
-                                <a href="produkt.html">
-                                    <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer">
+                                <a href="#">
+                                    <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer"
+                                    aria-label="Länk till produktsida för ljusblå new balenceskor.">
                                     <!--"https://pixabay.com/sv/photos/skodon-ny-balans-skor-sneakers-1837170/"-->
                                     <p class="bildtext">Bild av Pexels, Pixabay</p>
-                                 <h4>New Balance</h4><p>Sneakers Dam- ljusblå</p></a>
-                                 <p><b>649kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>New Balance</h3><p>Sneakers Dam- ljusblå</p>
+                                 <p><b>649kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                              </li>
                             <li class="slider-image">
                                 <a href="#">
-                                    <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer">
+                                    <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer"
+                                    aria-label="Länk till produktsida för vita Nike air Jordan skor.">
                                     <!--"https://pixabay.com/sv/photos/sparkar-sneakers-skor-jordans-nike-2213619/"-->
                                         <p class="bildtext">Bild av PublicCo, Pixabay</p>
-                                 <h4>Nike</h4><p>Sneakers Herr- vit/röd</p></a>
-                                 <p><b>3499kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>Nike</h3><p>Sneakers Herr- vit/röd</p>
+                                 <p><b>3499kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                             </li>
                             <li id="converse1" class="slider-image">
                                 <a href="produkt.html">
-                                    <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse">
+                                    <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse med vit logotyp."
+                                    aria-label="Länk till produktsida för svarta Converseskor">
                                     <!--"https://pixabay.com/sv/photos/f%C3%B6tter-skodon-ben-skor-sneakers-1842328/"-->
                                     <p class="bildtext">Bild av Pexels, Pixabay</p>
-                                 <h4>Converse</h4><p>Sneakers Dam- svart</p> </a>
-                                 <p><b>899kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>Converse</h3><p>Sneakers Dam- svart</p> 
+                                 <p><b>899kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                             </li>
                         </ul>
                     </article>
                  </section>
                  <section class="slider">
                      <article> 
-                         <a id="nyheter" href="#">Nyheter</a>
-                         <button class="next"><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
-                         <button class="prev"><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
+                         <a id="nyheter" href="#" aria-label="Länk till sida med fler nya produkter.">Nyheter</a>
+                         <button class="next" aria-label="Pil för att se fler produkter till höger."><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></button>
+                         <button class="prev" aria-label="Pil för att se fler produkter till vänster."><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></button>
                          <ul class="slider-images">
                              <li class="slider-image">
                                 <a href="#">
-                                    <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer">
+                                    <img src="img/footwear-1837170_640.jpg" alt="Ljusblå New Balanceskor med färgglada detaljer"
+                                    aria-label="Länk till produktsida för ljusblå new balenceskor.">
                                     <!--"https://pixabay.com/sv/photos/skodon-ny-balans-skor-sneakers-1837170/"-->
                                         <p class="bildtext">Bild av Pexels, Pixabay</p>
-                                 <h4>New Balance</h4><p>Sneakers Dam- ljusblå</p></a>
-                                 <p><b>649kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>New Balance</h3><p>Sneakers Dam- ljusblå</p>
+                                 <p><b>649kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                              </li>
                              <li class="slider-image">
                                 <a href="#">
-                                    <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer">
+                                    <img src="img/kicks-2213619_640.jpg" alt="Vita Nike Air Jordan skor med röda och svarta detaljer"
+                                    aria-label="Länk till produktsida för vita Nike air Jordan skor.">
                                     <!--"https://pixabay.com/sv/photos/sparkar-sneakers-skor-jordans-nike-2213619/"-->
                                     <p class="bildtext">Bild av PublicCo, Pixabay</p>
-                                 <h4>Nike</h4><p>Sneakers Herr- vit/röd</p></a>
-                                 <p><b>3499kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>Nike</h3><p>Sneakers Herr- vit/röd</p>
+                                 <p><b>3499kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                              </li>
                              <li id="converse2" class="slider-image">
                                 <a href="produkt.html">
-                                    <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse">
+                                    <img src="img/feet-1842328_640.jpg" alt="Svarta skor från Converse med vit logotyp."
+                                    aria-label="Länk till produktsida för svarta Converseskor">
                                     <!--"https://pixabay.com/sv/photos/f%C3%B6tter-skodon-ben-skor-sneakers-1842328/"-->
                                     <p class="bildtext">Bild av Pexels, Pixabay</p>
-                                 <h4>Converse</h4><p>Sneakers Dam- svart</p></a>
-                                 <p><b>899kr</b><i class="fa-regular fa-heart" style="color: #000000;"></i></p>
+                                 <h3>Converse</h3><p>Sneakers Dam- svart</p>
+                                 <p><b>899kr</b></p></a><i class="fa-regular fa-heart" style="color: #000000;" aria-label="Knapp för att lägga till bland dina gillade produkter."></i>
                              </li>
                          </ul>
                      </article>
@@ -132,9 +156,9 @@
                             <form id="user-reg" method="post" action="#" autocomplete="on">
                                <h3>Bli medlem och få 15% rabatt på ditt första köp!</h3>
                                <label for="user-reg-email">e-postadresse:</label>
-                               <input type="email" name="user-reg-email" id="user-reg-email" placeholder="epost@exempel.com...">
-                               <p>Läs mer om <a href="#">medlemsvilkår här.</a></p>
-                               <input type="submit" value="Registrer">
+                               <input aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" id="user-reg-email" placeholder="epost@exempel.com...">
+                               <p>Läs mer om <a href="#" aria-label="Länk till att se medlemsvillkor." >medlemsvillkår här.</a></p>
+                               <input aria-label="Tryck för att fullföra registrering." type="submit" value="Registrera">
                             </form>
                       </article>
                  </section>  
@@ -144,49 +168,49 @@
                             <!--"https://pixabay.com/sv/photos/b%C3%A4bis-skor-sm%C3%A5-sp%C3%A4dbarn-s%C3%B6t-1796583/"-->
                             <p class="bildtext">Bild av Alexas_Fotos, Pixabay</p>
                          <h3>3 för 2 på alla barnskor</h3>
-                         <a class="shoppa-nu-btn" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                         <a class="shoppa-nu-btn" href="#" aria-label="Länk till MBshoes sida för barnskor.">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
                      </article>
                      <article>
                             <img class="stor-bild" src="img/shoeshine-72477_640.jpg" alt="Olika typer skorengöring och borstar">
                             <!--"https://pixabay.com/sv/photos/skoputs-sko-polska-shine-brush-72477/"-->
                             <p class="bildtext">Bild av JamesDeMers, Pixabay</p>
                          <h3>20% på all skorengöring</h3>
-                         <a class="shoppa-nu-btn" href="#">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
+                         <a class="shoppa-nu-btn" href="#" aria-label="Länk till MBshoes sida för skotillbehör.">Shoppa nu<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></a>
                      </article>
                  </section>
-             </main>
-             <footer>
-                <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
-                <nav id="footer-row">
-                    <ul class="footer-ul">
-                        <li><h4>Om oss</h4></li>
-                        <li><a href="#">Hitta närmsta butik</a></li>
-                        <li><a href="#">Intigritetspolicy</a></li>
-                        <li><a href="#">Cookies</a></li>
-                        <li><a href="#">Jobba hos oss</a></li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <li><h4>Kundservice</h4></li>
-                        <li><a href="#">Kontakta oss</a></li>
-                        <li><a href="#">Retur</a></li>
-                        <li><a href="#">Leverans & frakt</a></li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <li><h4>Bli medlem</h4></li>
-                        <li><a href="#">Bli medlem</a></li>
-                        <li><a href="#">Medlemsvillkår</a></li>
-                        <li><a href="#">Medlemsförmåner</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                   <h3>Följ oss</h3>
-                   <ul id="footer-icons">
-                       <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
-                       <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
-                       <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
-                   </ul>
-                </nav>   
-            </footer>
+                </main>
+                <footer>
+                  <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
+                  <nav id="footer-row">
+                      <ul class="footer-ul">
+                          <li><h4>Om oss</h4></li>
+                          <li><a href="#" aria-label="Länk till att se MBshoes närmsta butik.">Hitta närmsta butik</a></li>
+                          <li><a href="#" aria-label="Länk till information om Intigritetspolicy.">Intigritetspolicy</a></li>
+                          <li><a href="#" aria-label="Länk till information om cookies.">Cookies</a></li>
+                          <li><a href="#" aria-label="Länk till information för att söka jobba hos MBshoe.">Jobba hos oss</a></li>
+                      </ul>
+                      <ul class="footer-ul">
+                          <li><h4>Kundservice</h4></li>
+                          <li><a href="#" aria-label="Länk till kontaktinformation.">Kontakta oss</a></li>
+                          <li><a href="#" aria-label="Länk till information om retur.">Retur</a></li>
+                          <li><a href="#" aria-label="Länk till information om leverans och frakt.">Leverans & frakt</a></li>
+                      </ul>
+                      <ul class="footer-ul">
+                          <li><h4>Bli medlem</h4></li>
+                          <li><a href="#" aria-label="Länk till information om hur du blir medlem hos MBshoe.">Bli medlem</a></li>
+                          <li><a href="#" aria-label="Länk till information om medlemsvillkor.">Medlemsvillkår</a></li>
+                          <li><a href="#" aria-label="Länk till information om medlemsförmåner.">Medlemsförmåner</a></li>
+                      </ul>
+                  </nav>
+                  <nav>
+                     <h3>Följ oss</h3>
+                     <ul id="footer-icons">
+                         <li><a href="#" aria-label="Länk till MBshoes facebooksida."><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                         <li><a href="#" aria-label="Länk till MBshoes instagramkonto."><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                         <li><a href="#" aria-label="Länk till MBshoes twitter."><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+                     </ul>
+                  </nav>   
+              </footer>
         </div>
 
         <script>

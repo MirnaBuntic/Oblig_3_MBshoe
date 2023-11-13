@@ -3,59 +3,77 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mirna Buntic">
+    <meta name="description" content="På mina sidor hittar du all din kontaktinformation, dina beställningar, returer och mycket mer.">
+    <meta name="keywords" content="Sneakers, Damskor, Herrskor, Startsida, Shoppa">
+    <!--Metadata för Facebook och Instagram-->
+    <meta property="og:title" content="MBshoe">
+    <meta property="og:description" content="På mina sidor hittar du all din kontaktinformation, dina beställningar, returer och mycket mer.">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:url" content="https://itstud.hiof.no/~mirnacb/mina-sidor.html">
+    <meta property="og:type" content="website">
+    <!--Slut-->
+    <!--Metadata för Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MBshoe">
+    <meta name="twitter:description" content="På mina sidor hittar du all din kontaktinformation, dina beställningar, returer och mycket mer.">
+    <meta name="twitter:image" content="http://example.com/image.jpg">
+    <meta name="twitter:url" content="https://itstud.hiof.no/~mirnacb/mina-sidor.html">
+    <!--Slut-->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>MBshoe-mina sidor</title>
+    <title>MBshoe: Mina sidor ger dig svar på frågor och erbjuder information av topp klass.</title>
  </head>
     <body>
        <div id="grid-container">
             <header>
                 <nav>
-                    <span><a href="index.html" id="logo">MBshoe</a></span>
+                   <span><a href="index.html" id="logo">MBshoe</a></span>
 
-                    <section id="left-nav">
+                   <section id="left-nav">
                         <div>
-                            <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                            <i id="ma-glass" class="fa-solid fa-magnifying-glass" style="color:#ffffff;"></i>
+                           <i id="ham" class="fa-solid fa-bars" style="color: #ffffff;" role="img" aria-haspopup="true" aria-expanded="false" aria-label="Tryck för att få upp meny."></i>
+                           <i id="ma-glass" class="fa-solid fa-magnifying-glass" style="color:#ffffff;" aria-label="Tryck för att kunna söka på hemsidan."></i>
                         </div>
                     </section>
 
-                    <section id="right-nav">
+                   <section id="right-nav">
                         <div>
-                            <a href="#"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
-                            <a href="mina-sidor.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
-                            <a href="#"><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+                           <a href="#" aria-label="Länk till en sida där du har alla dina gillade produkter." ><i class="fa-solid fa-heart" style="color: #ffffff;"></i></a>
+                           <a href="mina-sidor.html" aria-label="Länk till mina-sidor."><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                           <a href="#" aria-label="Länk till kundvagnen och ut-checkning."><i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
                         </div>
                     </section>
-            
-                    <form method="post" action="#">
-                        <label for="search"></label>
+    
+                    <form method="get" action="/search" aria-haspopup="true">
+                        <label for="search" aria-label="Tryck för att kunna söka på sidan." ></label>
                         <input type="text" id="search" name="search" placeholder="Sök...">
                     </form>
 
-                    <ul class="navbar">
-                        <li><a href="#">Nyheter</a></li>
-                        <li><a href="#">REA</a></li>
-                        <li><a href="#">Damskor</a></li>
-                        <li><a href="#">Herrskor</a></li>
-                        <li><a href="#">Barnskor</a></li>
-                        <li><a href="#">Skotillbehör</a></li>
-                    </ul>
+                   <ul class="navbar">
+                      <li><a href="#" aria-label="Länk till MBshoes sida med skonyheter.">Nyheter</a></li>
+                      <li><a href="#" aria-label="Länk till MBshoes sida med alla rea-artiklar." >REA</a></li>
+                      <li><a href="#" aria-label="Länk till MBshoes sida för damskor.">Damskor</a></li>
+                      <li><a href="#" aria-label="Länk till MBshoes sida för herrskor." >Herrskor</a></li>
+                      <li><a href="#" aria-label="Länk till MBshoes sida för barnskor." >Barnskor</a></li>
+                      <li><a href="#" aria-label="Länk till MBshoes sida med alla skotillbehör.">Skotillbehör</a></li>
+                      <li><a href="analys.html" aria-label="Länk till MBshoes analyssida.">Analys</a></li>
+                   </ul>
                 </nav>
-            </header>
+           </header>
             <main>
                 <section>
                     <nav>
                         <ul id="hans-greta">
-                            <li><a href="index.html">Hem></a></li>
+                            <li><a href="index.html" aria-label="Länk till startsidan.">Startsida></a></li>
                             <li class="this-page">Mina sidor</li>
                         </ul>
                     </nav>
                 </section>
-                <h2 id="rubrik-ms">Mina sidor</h2>
+                <h1 id="rubrik-ms">Mina sidor</h1>
                 <section class="list-container">
                         <ul id="icons-info">
                             <li><i class="fa-solid fa-user" style="color: #000000;"></i></li>
@@ -65,15 +83,15 @@
                             <li><i class="fa-solid fa-arrow-right-from-bracket" style="color: #000000;"></i></li>
                         </ul>
                         <ul id="profile">
-                            <li><a href="#"><b>Mina kontoinställningar</b></a></li>
-                            <li><a href="#"><b id="mina-best">Mina beställningar</b></a></li>
-                            <li><a href="#"><b>Mina returer</b></a></li>
-                            <li><a href="#"><b>Behöver du hjälp?</b></a></li>
-                            <li><a href="#"><b>Logga ut</b></a></li>
+                            <li><a href="#" aria-label="Länk till mina kontoinställningar."><b>Mina kontoinställningar</b></a></li>
+                            <li><a href="#" aria-label="Länk till mina beställningar."><b id="mina-best">Mina beställningar</b></a></li>
+                            <li><a href="#" aria-label="Länk till mina returer."><b>Mina returer</b></a></li>
+                            <li><a href="#" aria-label="Länk till hjälpsida."><b>Behöver du hjälp?</b></a></li>
+                            <li><a href="#" aria-label="Tryck för att logga ut från ditt konto."><b>Logga ut</b></a></li>
                         </ul>
 
                         <ul id="extra">
-                            <li><h3>Mina beställningar</h3></li>
+                            <li><h2>Mina beställningar</h2></li>
                             <li><p>Du har inga beställningar</p></li>
                         </ul>
                 </section>
@@ -81,47 +99,47 @@
                 <section id="user-registration">
                     <article>
                         <form id="user-reg" method="post" action="#" autocomplete="on">
-                            <h3>Bli medlem och få 15% rabatt på ditt första köp!</h3>
-                            <label for="user-reg-email">e-postadresse:</label>
-                            <input type="email" name="user-reg-email" id="user-reg-email" placeholder="epost@exempel.com...">
-                            <p>Läs mer om <a href="#">medlemsvilkår här.</a></p>
-                            <input type="submit" value="Registrer">
-                    </form>
-                </article>
+                           <h3>Bli medlem och få 15% rabatt på ditt första köp!</h3>
+                           <label for="user-reg-email">e-postadresse:</label>
+                           <input aria-label="Skriv din email för att bli medlem." type="email" name="user-reg-email" id="user-reg-email" placeholder="epost@exempel.com...">
+                           <p>Läs mer om <a href="#" aria-label="Länk till att se medlemsvillkor." >medlemsvillkår här.</a></p>
+                           <input aria-label="Tryck för att fullföra registrering." type="submit" value="Registrera">
+                        </form>
+                  </article>
                 </section>  
             </main>
-            <footer>
-                <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
-                <nav id="footer-row">
-                    <ul class="footer-ul">
-                        <li><h4>Om oss</h4></li>
-                        <li><a href="#">Hitta närmsta butik</a></li>
-                        <li><a href="#">Intigritetspolicy</a></li>
-                        <li><a href="#">Cookies</a></li>
-                        <li><a href="#">Jobba hos oss</a></li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <li><h4>Kundservice</h4></li>
-                        <li><a href="#">Kontakta oss</a></li>
-                        <li><a href="#">Retur</a></li>
-                        <li><a href="#">Leverans & frakt</a></li>
-                    </ul>
-                    <ul class="footer-ul">
-                        <li><h4>Bli medlem</h4></li>
-                        <li><a href="#">Bli medlem</a></li>
-                        <li><a href="#">Medlemsvillkår</a></li>
-                        <li><a href="#">Medlemsförmåner</a></li>
-                    </ul>
-                </nav>
-                <nav>
-                   <h3>Följ oss</h3>
-                   <ul id="footer-icons">
-                       <li><a href="#"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
-                       <li><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
-                       <li><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
-                   </ul>
-                </nav>   
-            </footer>
+                <footer>
+                  <h3><a href="index.html" id="logo-footer">MBshoe</a></h3>
+                  <nav id="footer-row">
+                      <ul class="footer-ul">
+                          <li><h4>Om oss</h4></li>
+                          <li><a href="#" aria-label="Länk till att se MBshoes närmsta butik.">Hitta närmsta butik</a></li>
+                          <li><a href="#" aria-label="Länk till information om Intigritetspolicy.">Intigritetspolicy</a></li>
+                          <li><a href="#" aria-label="Länk till information om cookies.">Cookies</a></li>
+                          <li><a href="#" aria-label="Länk till information för att söka jobba hos MBshoe.">Jobba hos oss</a></li>
+                      </ul>
+                      <ul class="footer-ul">
+                          <li><h4>Kundservice</h4></li>
+                          <li><a href="#" aria-label="Länk till kontaktinformation.">Kontakta oss</a></li>
+                          <li><a href="#" aria-label="Länk till information om retur.">Retur</a></li>
+                          <li><a href="#" aria-label="Länk till information om leverans och frakt.">Leverans & frakt</a></li>
+                      </ul>
+                      <ul class="footer-ul">
+                          <li><h4>Bli medlem</h4></li>
+                          <li><a href="#" aria-label="Länk till information om hur du blir medlem hos MBshoe.">Bli medlem</a></li>
+                          <li><a href="#" aria-label="Länk till information om medlemsvillkor.">Medlemsvillkår</a></li>
+                          <li><a href="#" aria-label="Länk till information om medlemsförmåner.">Medlemsförmåner</a></li>
+                      </ul>
+                  </nav>
+                  <nav>
+                     <h3>Följ oss</h3>
+                     <ul id="footer-icons">
+                         <li><a href="#" aria-label="Länk till MBshoes facebooksida."><i class="fa-brands fa-facebook" style="color: #000000;"></i></a></li>
+                         <li><a href="#" aria-label="Länk till MBshoes instagramkonto."><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
+                         <li><a href="#" aria-label="Länk till MBshoes twitter."><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
+                     </ul>
+                  </nav>   
+              </footer>
        </div>        
        <script>
              // Finn navigasjonsmenyen
