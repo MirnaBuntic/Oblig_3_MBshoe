@@ -400,7 +400,7 @@ table, th, td {
 /*CSS för desktop*/
 
 
-@media only screen and (min-width:800px){
+@media only screen and (min-width:700px){
 
     #grid-container{
         grid-template-areas: "header header header" ". main ." "footer footer footer";
