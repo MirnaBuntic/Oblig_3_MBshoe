@@ -17,6 +17,6 @@ produkt.html - Produktside hvor jeg for første gang prøvde meg på litt Javasc
 
 ## Refleksjon:
 
-Dette var et av mine første prosjekter hvor jeg hadde stort fokus på å lære meg grunnleggende kunnskaper innenfor webutvikling og responisv design (mobile first). Jeg lærte meg også mye om universiell utforming ocg SEO optimering.
+Dette var et av mine første prosjekter hvor jeg hadde stort fokus på å lære meg grunnleggende kunnskaper innenfor webutvikling og responisv design (mobile first). Jeg lærte meg også mye om universiell utforming og SEO optimering.
 
 
